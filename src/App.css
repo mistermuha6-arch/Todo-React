@@ -1,0 +1,56 @@
+h1{
+  color: black;
+  text-align: center;
+  margin-top: 20%;
+  padding: 0%;
+}
+p{
+  text-align: right;
+  padding-right: 10%;
+  padding-top: 10px;
+}
+li{
+  border-top: 2px solid black;
+  display:flex;
+  margin-top: 12px;
+  justify-content: space-between;
+}
+ol{
+  
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin: 0px;
+  padding: 5px 20px;
+  list-style: none; 
+  align-items: center;
+  
+}
+button{
+  color: rgb(255, 255, 255);
+  background: black;
+  display: flex;
+  cursor: pointer;
+  box-shadow: 0 5px 15px 0 rgb(63, 63, 63);
+  transition: 0.5s;
+ /* margin-left: 20%; */
+}
+button:hover{
+  transform: translate(0,-3px);
+  box-shadow: 0 20px 40px 0 rgb(131, 131, 131);
+}
+.Buttons{
+  display: flex;
+  gap: 15px;
+}
+.inpButton{
+  display: flex;
+  padding-left: 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+input{
+  border-radius: 8px;
+}
