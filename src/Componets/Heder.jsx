@@ -1,9 +1,14 @@
-
+import { useState } from "react"
+import { useEffect } from "react"
 function Heder () {
-    const now = new Date()
+    const [date,setDate] = useState(new Date())
+useEffect(() => {
+    const timer = setInterval(() => setDate(new Date()),1000)
+    return () => clearInterval(timer)
+},[])  
     return(
         <>
-    <p>{now.toLocaleDateString()}</p>
+    <div className="Time"><p>{date.toLocaleString()}</p></div>
     <h1>Ваши задачи на сегодня</h1>
 </>)}
 export default Heder

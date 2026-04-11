@@ -4,7 +4,7 @@ import InputSearch from "./Input/InputSearch"
 function ListProblem() {
     const [tasks,setTasc] = useState([
         {id: 1,text:'Помыть посуду',completed:false},
-        {id:2,text:'Посмотреть фильм с девушкой',completed:false},
+        {id:2,text:'Посмотреть фильм ',completed:false},
         {id:3,text:'Работать',completed:false},
         {id:4,text:'Поиграть',completed:false},
         {id:5,text:'Спать',completed:false},
@@ -32,9 +32,9 @@ function ListProblem() {
          <InputSearch onAdd = {handClick}/> 
          <ol>
             {tasks.map((t) => (
-            <li key={t.id} style={{ textDecoration:t.completed ? 'line-through' : 'none'
-            }}>
-                <span>{t.text}</span> <Button
+            <li>  <div className="debagList"><span key={t.id} style={{ textDecoration:t.completed ? 'line-through' : 'none'
+            }}
+                >{t.text}</span></div> <Button
                 onDelete={() => deleteTask(t.id)}
                 onToogle={() => TooledTask(t.id)}
                 /></li>
